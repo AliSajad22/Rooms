@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-image: url("../bilder/background.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #786a65;
+    align-items: center;
+}
+
+header img {
+    width: 253px;
+    height: 86px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: #2bbed8;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #938884;
+}
+
+main {
+    background-color: #2bbed8;
+    margin: 20px;
+}
+
+
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: #ffffff;
+    background-color: #2bbed8;
+    font-size: 2rem;
+    padding: 1rem;
+   
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    color: #2bbed8;
+    font-size: 1.25rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    background-color: #938884;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.56rem;
+}
+
+footer {
+    background-color: #786a65;
+    text-align: center;
+    padding: 1px;
+}
+
+footer .footer-content {
+    background-color: #2bbed8;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+    font-size :16px;
+    padding: 1rem;
+}
