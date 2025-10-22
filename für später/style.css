@@ -103,6 +103,7 @@
   font-size: 70px;
   color: var(--color-classic-rose);
   text-align: right;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -169,6 +170,7 @@
 }
 
 .link {
+  display: block;
   font-weight: 900;
   font-size: 25px;
   line-height: 50px;
@@ -466,15 +468,11 @@
   }
 }
 /* footer  */
-.footer__section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 @media (min-width: 1234px) {
   .footer__section {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 }
