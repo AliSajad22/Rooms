@@ -1,0 +1,15 @@
+@use "../utils/index.scss" as b;
+
+.wrapper {
+  margin: 0 auto;
+  padding: var(--distance-xl) var(--distance-xs);
+  max-width: 1728px;
+
+  @media (min-width: b.$breakpoint-Desktop) {
+    & {
+      margin: 0 auto;
+      padding: var(--distance-xl) var(--distance-5xl);
+      max-width: 1728px;
+    }
+  }
+}

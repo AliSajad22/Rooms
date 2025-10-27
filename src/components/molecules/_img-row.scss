@@ -1,0 +1,24 @@
+@use "..//utils/wrapper" as *;
+
+@use "../utils/index.scss" as b;
+
+@use "../utils/mixin" as f;
+
+.img-row {
+  @include f.flex-centered;
+  flex-wrap: wrap;
+  gap: var(--distance-m);
+  max-width: 1409px;
+
+  @media (min-width: b.$breakpoint-Desktop) {
+    justify-content: space-between;
+  }
+
+  .logo--primary {
+    color: var(--color-black);
+  }
+
+  .logo--secondary {
+    color: var(--color-classic-rose);
+  }
+}

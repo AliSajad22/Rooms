@@ -1,0 +1,18 @@
+@use "../utils/mixin" as f;
+
+.nav {
+  @include f.flex-ende;
+  gap: var(--distance-xl);
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+
+  &-link {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xs);
+    font-family: var(--body-font);
+    line-height: var(--line-height-xl);
+    text-decoration: underline;
+    color: var(--color-black);
+  }
+}

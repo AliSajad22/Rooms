@@ -1,0 +1,55 @@
+@use "../utils/index.scss" as b;
+
+.headline {
+  margin: 0 0 var(--distance-m) 0;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--body-font);
+  line-height: var(--line-height-xl);
+  color: var(--color-black);
+  text-align: left;
+
+  &--x-large {
+    font-weight: var(--font-weight-black);
+    font-size: var(--distance-4xl);
+    color: var(--color-classic-rose);
+    text-align: right;
+    text-decoration: none;
+
+    @media (min-width: b.$breakpoint-tablet) {
+      font-size: var(--font-size-5xl);
+    }
+  }
+
+  &--large {
+    font-size: var(--distance-xl);
+
+    @media (min-width: b.$breakpoint-tablet) {
+      font-size: var(--font-size-3xl);
+    }
+  }
+
+  &--medium {
+    font-size: var(--font-size-xl);
+
+    @media (min-width: b.$breakpoint-tablet) {
+      font-size: var(--font-size-xxl);
+    }
+  }
+
+  &--small {
+    font-size: var(--font-size-s);
+
+    @media (min-width: b.$breakpoint-tablet) {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  &--x-small {
+    font-weight: var(--font-weight-black);
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-s);
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-align: center;
+  }
+}

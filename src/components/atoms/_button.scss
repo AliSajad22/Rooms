@@ -1,0 +1,38 @@
+@use "../utils/index.scss" as b;
+
+@use "../utils/mixin" as f;
+
+.btn {
+  @include f.flex-centered;
+  padding: var(--distance-xs) var(--distance-xl) var(--distance-xs)
+    var(--distance-xl);
+  width: fit-content;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    width: 269px;
+  }
+
+  &__text {
+    padding: 0 var(--distance-xs) 0 0;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--body-font);
+    line-height: var(--line-height-xl);
+    color: var(--color-black);
+  }
+
+  &--primary {
+    border: var(--distance-3xs) solid var(--color-black);
+    background-color: var(--color-white);
+    .icon {
+      color: var(--color-classic-rose);
+    }
+  }
+  &--secondary {
+    color: var(--color-black);
+    border: var(--distance-3xs) solid transparent;
+    background-color: var(--color-white);
+    .icon {
+      color: var(--color-black);
+    }
+  }
+}
