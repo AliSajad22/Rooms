@@ -1,0 +1,10 @@
+@use "../utils/breakpoints" as b;
+
+@media (min-width: b.$breakpoint-Desktop) {
+  .footer__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -9,3 +9,10 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+@mixin footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
