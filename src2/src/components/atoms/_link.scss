@@ -1,0 +1,17 @@
+@use "../utils/breakpoints" as b;
+
+.link {
+  display: block;
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  font-family: var(--body-font);
+  text-decoration: underline;
+  color: var(--color-black);
+  text-wrap: nowrap;
+
+  @media (min-width: b.$breakpoint-Desktop) {
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-l);
+  }
+}

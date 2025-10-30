@@ -1,0 +1,52 @@
+@use "..//utils/wrapper" as *;
+
+@use "../utils/breakpoints" as b;
+
+@use "../utils/mixin" as f;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    justify-content: space-between;
+    padding-bottom: var(--distance-xs);
+  }
+
+  @media (min-width: b.$breakpoint-Desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &-reverse {
+      padding-top: var(--distance-xl);
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--distance-xs);
+
+    @media (min-width: b.$breakpoint-Desktop) {
+      gap: var(--distance-xl);
+      padding: 0 var(--distance-5xl) 0 0;
+    }
+  }
+
+  &__image-reverse {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--distance-xs);
+
+    @media (min-width: b.$breakpoint-Desktop) {
+      padding: 0 0 0 var(--distance-5xl);
+    }
+  }
+}

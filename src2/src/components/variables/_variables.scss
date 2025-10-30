@@ -1,0 +1,46 @@
+:root {
+  /* Real Colors */
+  --color-classic-rose: #fac8eb;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* Abstract Colors */
+  --color-brand-primary: var(--color-Classic-Rose);
+  --color-dark: var(--color-black);
+  --color-light: var(--color-white);
+
+  /* Distances */
+  --distance-3xs: 2px;
+  --distance-xxs: 14px;
+  --distance-xs: 16px;
+  --distance-s: 24px;
+  --distance-m: 32px;
+  --distance-l: 46px;
+  --distance-xl: 48px;
+  --distance-xxl: 76px;
+  --distance-3xl: 90px;
+  --distance-4xl: 140px;
+  --distance-5xl: 160px;
+
+  /* font-family */
+  --body-font: "inter";
+  --font-size-xs: 16px;
+  --font-size-s: 20px;
+  --font-size-m: 25px;
+  --font-size-l: 32px;
+  --font-size-xl: 40px;
+  --font-size-xxl: 48px;
+  --font-size-3xl: 64px;
+  --font-size-4xl: 70px;
+  --font-size-5xl: 107px;
+  --font-weight-black: 900;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+
+  /* line-height */
+  --line-height-xl: 100%;
+  --line-height-l: 100px;
+  --line-height-m: 50px;
+  --line-height-s: 42px;
+  --line-height-xs: 24px;
+}

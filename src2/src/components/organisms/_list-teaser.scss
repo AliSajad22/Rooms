@@ -1,0 +1,27 @@
+@use "../utils/breakpoints" as b;
+
+.directory,
+.btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--distance-xl);
+    justify-content: center;
+    padding: var(--distance-xl) 0;
+    border-top: solid 1px var(--color-black);
+    border-bottom: solid 1px var(--color-black);
+
+    @media (min-width: b.$breakpoint-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: var(--distance-xl) var(--distance-xs);
+    }
+
+    @media (min-width: b.$breakpoint-Desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      text-wrap: nowrap;
+    }
+  }
+}

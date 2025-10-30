@@ -1,0 +1,33 @@
+@use "../utils/breakpoints" as b;
+
+@use "../utils/mixin" as f;
+
+.conclusion {
+  @include f.flex-centered;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--distance-xl) var(--distance-xs);
+    background-color: var(--color-classic-rose);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+
+    @media (min-width: b.$breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      padding: var(--distance-xl) var(--distance-xs);
+      gap: var(--distance-xl);
+    }
+
+    @media (min-width: b.$breakpoint-Desktop) {
+      grid-template-columns: 1fr 1fr;
+      padding: var(--distance-xl) var(--distance-5xl);
+    }
+  }
+}

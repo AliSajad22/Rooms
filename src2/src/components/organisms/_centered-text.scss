@@ -1,0 +1,10 @@
+@use "../utils/mixin" as f;
+
+@use "..//utils/wrapper" as *;
+
+.center-container {
+  @include f.flex-centered;
+  flex-direction: column;
+  max-width: 697px;
+  text-align: center;
+}
