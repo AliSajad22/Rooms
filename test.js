@@ -1,24 +1,25 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector("header").style.top = "0";
+let prevScrollPos;
+let header;
+
+const setSticky = () => {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos || currentScrollPos <= 0) {
+    header.style.transform = "translateY(0%)";
   } else {
-     document.querySelector("header").style.top = "-130px";
+    header.style.transform = "translateY(-100%)";
   }
-  prevScrollpos = currentScrollPos;
-}
 
+  prevScrollPos = currentScrollPos;
+};
 
-(function() {
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.querySelector("header").style.top = "0";
-    } else {
-      document.querySelector("header").style.top = "-130px";
-    }
-    prevScrollpos = currentScrollPos;
-  };
-})();
+const initHeader = () => {
+  header = document.querySelector(".header");
+
+  if (!header) return;
+
+  prevScrollPos = window.pageYOffset;
+  window.addEventListener("scroll", setSticky, { passive: true });
+};
+
+export default initHeader;
